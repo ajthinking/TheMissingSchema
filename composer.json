@@ -1,0 +1,49 @@
+{
+    "name": "ajthinking/the-missing-schema",
+    "type": "package",
+    "description": "A schema.json file",
+    "keywords": [
+        "php",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Anders Jürisoo",
+            "email": "jurisoo@hotmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+
+    },
+    "require-dev": {
+
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [],
+            "providers": [
+                "TheMissingSchema\\ServiceProvider"
+            ],
+            "aliases": {
+            }            
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "TheMissingSchema\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
