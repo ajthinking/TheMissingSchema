@@ -1,4 +1,5 @@
-# :wrench: ```the missing schema for Laravel``` :wrench:
+# the missing schema file for Laravel :wrench:
+Sometimes we just want to see a list of all tables and columns
 
 ## Installation
 
