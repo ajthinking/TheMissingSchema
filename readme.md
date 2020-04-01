@@ -1,4 +1,4 @@
-# the missing schema file for Laravel :wrench:
+# The missing schema file for Laravel :wrench:
 Sometimes we just want to see/use a list of all models and their columns
 
 ## Installation
