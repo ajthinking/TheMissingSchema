@@ -19,8 +19,11 @@ Now, you can see a file `schema.json` in your database folder. At the moment it 
 
 ```json
 {
-    'users': [
-        "columnName": "name",
+    "users": [
+        {
+            "columnName": "name",
+            ...
+        },
         ...
     ],
     ...
