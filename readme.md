@@ -7,7 +7,7 @@
 ## Usage
 
 ´´´
-<?php
+\<?php
 
 use TheMissingSchema\Schema;
 
