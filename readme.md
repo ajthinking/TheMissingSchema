@@ -7,8 +7,6 @@
 ## Usage
 
 ´´´
-\<?php
-
 use TheMissingSchema\Schema;
 
 Schema::save();
