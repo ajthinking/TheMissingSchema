@@ -1,4 +1,4 @@
-# ```:wrench: the missing schema for Laravel :wrench:```
+# :wrench: ```the missing schema for Laravel``` :wrench:
 
 ## Installation
 
@@ -14,7 +14,7 @@ use TheMissingSchema\Schema;
 Schema::save();
 ´´´
 
-Now, you will have a file `schema.json` in your database folder.
+Now, you can see a file `schema.json` in your database folder. At the moment it does not do anything, and it does not affect your migrations whatsoever.
 
 
 ## Supported drivers
