@@ -17,7 +17,14 @@ Schema::save();
 
 Now, you can see a file `schema.json` in your database folder. At the moment it does not do anything, and it does not affect your migrations whatsoever.
 
-```
+```json
+{
+    'users': [
+        "columnName": "name",
+        ...
+    ],
+    ...
+}
 ```
 
 ## Supported drivers
