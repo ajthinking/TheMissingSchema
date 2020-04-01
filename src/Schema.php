@@ -2,19 +2,28 @@
 
 namespace TheMissingSchema;
 
+use DB;
+use TheMissingSchema\Drivers\Sqlite;
+
 class Schema
 {
-    public static function show()
+    public static function save()
     {
-        return (object) [
-            'users' => [
-                'name' => [
-                    'type' => 'string'
-                ],
-                'email' => [
-                    'type' => 'string'
-                ],                
-            ],
+        $supportedDrivers = [
+            'sqlite' => Sqlite::class
         ];
+
+        try {
+            $driver = $supportedDrivers[config('database.default')];
+        } catch(\Exception $e) {
+            dd("Supported database drivers: " . collect($supportedDrivers)->keys()->join(', '));
+        }
+        
+        $schema = $driver::getSchema();
+
+        file_put_contents(
+            base_path('database/schema.json'),
+            json_encode($schema, JSON_PRETTY_PRINT)
+        );
     }
 }
